@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "Global Photic Sneeze Study"
+  site-url: https://sneezestudy.org/
+  page-navigation: true
+  bread-crumbs: true
+  
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Publications
+        href: publications.qmd
+  page-footer:
+    center: |
+      [![](assets/logo-mpi.png){width=180pt}](https://www.kyb.tuebingen.mpg.de/en)
+    right: "[Imprint](imprint.qmd)"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    lightbox: true
+
+execute:
+  freeze: auto
+
+date: last-modified
+
+language:
+  title-block-published: "Last modified:"
